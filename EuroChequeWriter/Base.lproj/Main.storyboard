@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EuroChequeWriter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created by: Henrik Gustavii" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lf5-K6-4Ci">
+                                <rect key="frame" x="85" y="626.5" width="205" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter cheque amount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Luw-T8-2EB">
+                                <rect key="frame" x="108" y="57" width="159.5" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cheque Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TAv-iw-H4n">
+                                <rect key="frame" x="125.5" y="28" width="124.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eeT-BE-YSq">
+                                <rect key="frame" x="16" y="133" width="343" height="129"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="129" id="OT6-cx-vSe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9dm-is-fZ9">
+                                <rect key="frame" x="83.5" y="95" width="208" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j4u-pi-gwJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="j4u-pi-gwJ" secondAttribute="height" multiplier="5:3" id="477-w1-cDO"/>
+                                        </constraints>
+                                        <state key="normal" title="English"/>
+                                        <connections>
+                                            <action selector="englishButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7aX-co-6xw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bkk-FT-are">
+                                        <rect key="frame" x="50" y="0.0" width="48" height="30"/>
+                                        <state key="normal" title="French"/>
+                                        <connections>
+                                            <action selector="frenchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tut-1f-n5U"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QQO-gA-CPL">
+                                        <rect key="frame" x="98" y="0.0" width="55" height="30"/>
+                                        <state key="normal" title="Spanish"/>
+                                        <connections>
+                                            <action selector="spanishButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hr4-jE-Tc9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fYc-yg-zFm">
+                                        <rect key="frame" x="153" y="0.0" width="55" height="30"/>
+                                        <state key="normal" title="German"/>
+                                        <connections>
+                                            <action selector="germanButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="auc-dM-UG5"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TAv-iw-H4n" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Gjv-Dh-5V9"/>
+                            <constraint firstItem="Luw-T8-2EB" firstAttribute="top" secondItem="TAv-iw-H4n" secondAttribute="bottom" constant="8" id="TfQ-eT-6mQ"/>
+                            <constraint firstItem="Lf5-K6-4Ci" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Tnx-Dw-1eV"/>
+                            <constraint firstItem="eeT-BE-YSq" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="fOC-ZT-fKV"/>
+                            <constraint firstItem="eeT-BE-YSq" firstAttribute="top" secondItem="9dm-is-fZ9" secondAttribute="bottom" constant="8" id="gEe-UV-TUS"/>
+                            <constraint firstItem="TAv-iw-H4n" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hgY-2a-6Gd"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Lf5-K6-4Ci" secondAttribute="bottom" constant="20" id="kHd-ji-RUo"/>
+                            <constraint firstItem="9dm-is-fZ9" firstAttribute="top" secondItem="Luw-T8-2EB" secondAttribute="bottom" constant="8" id="qOu-7j-CKn"/>
+                            <constraint firstItem="9dm-is-fZ9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tVN-oC-dK4"/>
+                            <constraint firstItem="Luw-T8-2EB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uo8-mw-O8b"/>
+                            <constraint firstItem="eeT-BE-YSq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="vTi-bd-YhW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="conversionOutput" destination="eeT-BE-YSq" id="fMx-UO-90c"/>
+                        <outlet property="numberInput" destination="Luw-T8-2EB" id="iqZ-JN-WLV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.75" y="135.21126760563379"/>
+        </scene>
+    </scenes>
+</document>

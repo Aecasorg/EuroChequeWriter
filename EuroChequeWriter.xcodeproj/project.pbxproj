@@ -1,0 +1,324 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AF5759AC1EB077050093C89B /* EnglishCheque.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5759AB1EB077050093C89B /* EnglishCheque.swift */; };
+		AF5759AE1EB5DCB30093C89B /* FrenchCheque.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5759AD1EB5DCB30093C89B /* FrenchCheque.swift */; };
+		AF5759B01EB5DCC70093C89B /* SpanishCheque.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5759AF1EB5DCC60093C89B /* SpanishCheque.swift */; };
+		AF5759B21EB5DCDB0093C89B /* GermanCheque.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5759B11EB5DCDB0093C89B /* GermanCheque.swift */; };
+		AFCCA3B91E810D2100CEDA8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCCA3B81E810D2100CEDA8B /* AppDelegate.swift */; };
+		AFCCA3BB1E810D2100CEDA8B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCCA3BA1E810D2100CEDA8B /* ViewController.swift */; };
+		AFCCA3BE1E810D2200CEDA8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFCCA3BC1E810D2200CEDA8B /* Main.storyboard */; };
+		AFCCA3C01E810D2200CEDA8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFCCA3BF1E810D2200CEDA8B /* Assets.xcassets */; };
+		AFCCA3C31E810D2200CEDA8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFCCA3C11E810D2200CEDA8B /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AF5759AB1EB077050093C89B /* EnglishCheque.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnglishCheque.swift; sourceTree = "<group>"; };
+		AF5759AD1EB5DCB30093C89B /* FrenchCheque.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrenchCheque.swift; sourceTree = "<group>"; };
+		AF5759AF1EB5DCC60093C89B /* SpanishCheque.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpanishCheque.swift; sourceTree = "<group>"; };
+		AF5759B11EB5DCDB0093C89B /* GermanCheque.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GermanCheque.swift; sourceTree = "<group>"; };
+		AFCCA3B51E810D2100CEDA8B /* EuroChequeWriter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EuroChequeWriter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFCCA3B81E810D2100CEDA8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AFCCA3BA1E810D2100CEDA8B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AFCCA3BD1E810D2200CEDA8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AFCCA3BF1E810D2200CEDA8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AFCCA3C21E810D2200CEDA8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AFCCA3C41E810D2200CEDA8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AFCCA3B21E810D2100CEDA8B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AFCCA3AC1E810D2100CEDA8B = {
+			isa = PBXGroup;
+			children = (
+				AFCCA3B71E810D2100CEDA8B /* EuroChequeWriter */,
+				AFCCA3B61E810D2100CEDA8B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AFCCA3B61E810D2100CEDA8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AFCCA3B51E810D2100CEDA8B /* EuroChequeWriter.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AFCCA3B71E810D2100CEDA8B /* EuroChequeWriter */ = {
+			isa = PBXGroup;
+			children = (
+				AFCCA3B81E810D2100CEDA8B /* AppDelegate.swift */,
+				AFCCA3BA1E810D2100CEDA8B /* ViewController.swift */,
+				AFCCA3BC1E810D2200CEDA8B /* Main.storyboard */,
+				AF5759AB1EB077050093C89B /* EnglishCheque.swift */,
+				AF5759AF1EB5DCC60093C89B /* SpanishCheque.swift */,
+				AF5759B11EB5DCDB0093C89B /* GermanCheque.swift */,
+				AF5759AD1EB5DCB30093C89B /* FrenchCheque.swift */,
+				AFCCA3BF1E810D2200CEDA8B /* Assets.xcassets */,
+				AFCCA3C11E810D2200CEDA8B /* LaunchScreen.storyboard */,
+				AFCCA3C41E810D2200CEDA8B /* Info.plist */,
+			);
+			path = EuroChequeWriter;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AFCCA3B41E810D2100CEDA8B /* EuroChequeWriter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFCCA3C71E810D2200CEDA8B /* Build configuration list for PBXNativeTarget "EuroChequeWriter" */;
+			buildPhases = (
+				AFCCA3B11E810D2100CEDA8B /* Sources */,
+				AFCCA3B21E810D2100CEDA8B /* Frameworks */,
+				AFCCA3B31E810D2100CEDA8B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EuroChequeWriter;
+			productName = EuroChequeWriter;
+			productReference = AFCCA3B51E810D2100CEDA8B /* EuroChequeWriter.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AFCCA3AD1E810D2100CEDA8B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = aecasorg;
+				TargetAttributes = {
+					AFCCA3B41E810D2100CEDA8B = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 2E8UN8K889;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = AFCCA3B01E810D2100CEDA8B /* Build configuration list for PBXProject "EuroChequeWriter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AFCCA3AC1E810D2100CEDA8B;
+			productRefGroup = AFCCA3B61E810D2100CEDA8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AFCCA3B41E810D2100CEDA8B /* EuroChequeWriter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AFCCA3B31E810D2100CEDA8B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFCCA3C31E810D2200CEDA8B /* LaunchScreen.storyboard in Resources */,
+				AFCCA3C01E810D2200CEDA8B /* Assets.xcassets in Resources */,
+				AFCCA3BE1E810D2200CEDA8B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AFCCA3B11E810D2100CEDA8B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFCCA3BB1E810D2100CEDA8B /* ViewController.swift in Sources */,
+				AFCCA3B91E810D2100CEDA8B /* AppDelegate.swift in Sources */,
+				AF5759B01EB5DCC70093C89B /* SpanishCheque.swift in Sources */,
+				AF5759AE1EB5DCB30093C89B /* FrenchCheque.swift in Sources */,
+				AF5759B21EB5DCDB0093C89B /* GermanCheque.swift in Sources */,
+				AF5759AC1EB077050093C89B /* EnglishCheque.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AFCCA3BC1E810D2200CEDA8B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFCCA3BD1E810D2200CEDA8B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AFCCA3C11E810D2200CEDA8B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFCCA3C21E810D2200CEDA8B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AFCCA3C51E810D2200CEDA8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AFCCA3C61E810D2200CEDA8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AFCCA3C81E810D2200CEDA8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2E8UN8K889;
+				INFOPLIST_FILE = EuroChequeWriter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aecasorg.EuroChequeWriter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		AFCCA3C91E810D2200CEDA8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2E8UN8K889;
+				INFOPLIST_FILE = EuroChequeWriter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aecasorg.EuroChequeWriter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AFCCA3B01E810D2100CEDA8B /* Build configuration list for PBXProject "EuroChequeWriter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFCCA3C51E810D2200CEDA8B /* Debug */,
+				AFCCA3C61E810D2200CEDA8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFCCA3C71E810D2200CEDA8B /* Build configuration list for PBXNativeTarget "EuroChequeWriter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFCCA3C81E810D2200CEDA8B /* Debug */,
+				AFCCA3C91E810D2200CEDA8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AFCCA3AD1E810D2100CEDA8B /* Project object */;
+}
