@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14269.12" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14252.5"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -29,7 +28,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter cheque amount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Luw-T8-2EB">
-                                <rect key="frame" x="108" y="57" width="159.5" height="30"/>
+                                <rect key="frame" x="108" y="56.5" width="159.5" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
@@ -40,8 +39,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eeT-BE-YSq">
-                                <rect key="frame" x="16" y="183" width="343" height="129"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eeT-BE-YSq">
+                                <rect key="frame" x="16" y="160.5" width="343" height="129"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="129" id="OT6-cx-vSe"/>
                                 </constraints>
@@ -49,27 +48,52 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="HdW-Yn-ZUs">
-                                <rect key="frame" x="16" y="114" width="343" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="English"/>
-                                    <segment title="French"/>
-                                    <segment title="Spanish"/>
-                                    <segment title="German"/>
-                                </segments>
-                                <connections>
-                                    <action selector="changedLanguage:" destination="BYZ-38-t0r" eventType="valueChanged" id="e5T-Us-nTs"/>
-                                </connections>
-                            </segmentedControl>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Frg-Gd-Gw5">
+                                <rect key="frame" x="16" y="100.5" width="343" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Lb-mg-2Ry">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="30"/>
+                                        <state key="normal" title="English"/>
+                                        <connections>
+                                            <action selector="englishButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9zb-2u-eBc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RCi-ZM-Iyu">
+                                        <rect key="frame" x="95" y="0.0" width="48" height="30"/>
+                                        <state key="normal" title="French"/>
+                                        <connections>
+                                            <action selector="frenchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="67r-O5-f5y"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X3k-IA-h46">
+                                        <rect key="frame" x="188" y="0.0" width="55" height="30"/>
+                                        <state key="normal" title="Spanish"/>
+                                        <connections>
+                                            <action selector="spanishButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FL5-vT-Vr4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxP-4P-AXn">
+                                        <rect key="frame" x="288" y="0.0" width="55" height="30"/>
+                                        <state key="normal" title="German"/>
+                                        <connections>
+                                            <action selector="germanButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IJv-DP-Bdg"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Frg-Gd-Gw5" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="1bd-m6-wap"/>
                             <constraint firstItem="TAv-iw-H4n" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Gjv-Dh-5V9"/>
                             <constraint firstItem="Luw-T8-2EB" firstAttribute="top" secondItem="TAv-iw-H4n" secondAttribute="bottom" constant="8" id="TfQ-eT-6mQ"/>
                             <constraint firstItem="Lf5-K6-4Ci" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Tnx-Dw-1eV"/>
+                            <constraint firstItem="Frg-Gd-Gw5" firstAttribute="top" secondItem="Luw-T8-2EB" secondAttribute="bottom" constant="14" id="Z0G-ln-csK"/>
                             <constraint firstItem="eeT-BE-YSq" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="fOC-ZT-fKV"/>
+                            <constraint firstItem="Frg-Gd-Gw5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gdw-Pw-PL9"/>
                             <constraint firstItem="TAv-iw-H4n" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hgY-2a-6Gd"/>
+                            <constraint firstItem="Frg-Gd-Gw5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="j3i-es-dOQ"/>
+                            <constraint firstItem="eeT-BE-YSq" firstAttribute="top" secondItem="Frg-Gd-Gw5" secondAttribute="bottom" constant="30" id="jtz-M3-BdI"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Lf5-K6-4Ci" secondAttribute="bottom" constant="20" id="kHd-ji-RUo"/>
                             <constraint firstItem="Luw-T8-2EB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uo8-mw-O8b"/>
                             <constraint firstItem="eeT-BE-YSq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="vTi-bd-YhW"/>

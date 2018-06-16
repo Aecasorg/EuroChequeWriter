@@ -22,26 +22,8 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-    
-    @IBAction func changedLanguage(_ sender: UISegmentedControl) {
-        
-        switch sender.selectedSegmentIndex {
-        case 0:
-            englishButton();
-        case 1:
-            frenchButton();
-        case 2:
-            spanishButton();
-        case 3:
-            germanButton();
-        default:
-            break
-        }
-        
-    }
-    
-    func englishButton() {
-    //@IBAction func englishButton(_ sender: UIButton) {
+
+    @IBAction func englishButton(_ sender: UIButton) {
         let englishNumber = EnglishCheque()
         if let input = self.numberInput.text, let numberInputDouble:Double = Double(input) {
             if numberInputDouble < 100000000 {
@@ -56,8 +38,7 @@ class ViewController: UIViewController {
         }
     }
     
-    func frenchButton() {
-    // @IBAction func frenchButton(_ sender: UIButton) {
+     @IBAction func frenchButton(_ sender: UIButton) {
         let frenchNumber = FrenchCheque()
         if let input = self.numberInput.text, let numberInputDouble:Double = Double(input) {
             if numberInputDouble < 100000000 {
@@ -72,8 +53,7 @@ class ViewController: UIViewController {
         }
     }
     
-    func spanishButton() {
-    // @IBAction func spanishButton(_ sender: UIButton) {
+     @IBAction func spanishButton(_ sender: UIButton) {
         let spanishNumber = SpanishCheque()
         if let input = self.numberInput.text, let numberInputDouble:Double = Double(input) {
             if numberInputDouble < 100000000 {
@@ -88,8 +68,7 @@ class ViewController: UIViewController {
         }
     }
     
-    func germanButton() {
-    // @IBAction func germanButton(_ sender: UIButton) {
+     @IBAction func germanButton(_ sender: UIButton) {
         let germanNumber = GermanCheque()
         if let input = self.numberInput.text, let numberInputDouble:Double = Double(input) {
             if numberInputDouble < 100000000 {
